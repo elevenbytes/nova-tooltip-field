@@ -1,0 +1,30 @@
+{
+    "name": "elbytes/nova-tooltip-field",
+    "description": "A tooltip field for Nova apps",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "homepage": "https://github.com/elevenbytes/nova-tooltip-field",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elbytes\\NovaTooltipField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elbytes\\NovaTooltipField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
