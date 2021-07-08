@@ -49,7 +49,7 @@ use Elbytes\NovaTooltipField\Tooltip;
 ....
 
 Tooltip::make('Type', 'type')
-    ->setDefaultIcon('<svg width="18" height="18">...</svg>')
+    ->setDefaultIcon('<svg class="h-5 w-5">...</svg>')
 ```
 
 ### Value-dependent icons
@@ -63,8 +63,8 @@ use Elbytes\NovaTooltipField\Tooltip;
 
 Tooltip::make('Type', 'type')
        ->setDependIcons([
-           'fieldValue' => '<svg width="18" height="18">...</svg>',
-           'fieldValue2' => '<svg width="18" height="18">...</svg>',
+           'fieldValue' => '<svg class="h-5 w-5">...</svg>',
+           'fieldValue2' => '<svg class="h-5 w-5">...</svg>',
        ]),
 ```
 
