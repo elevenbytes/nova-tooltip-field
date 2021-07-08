@@ -32,10 +32,10 @@ Tooltip::make('Type', 'type'),
 // OR
 
 Tooltip::make('Type', 'type')
-       ->setDefaultIcon('<svg>...</svg>') // Optional
+       ->setDefaultIcon('<svg width="18" height="18">...</svg>') // Optional
        ->setDependIcons([
-           'fieldValue' => '<svg>...</svg>',
-           'fieldValue2' => '<svg>...</svg>',
+           'fieldValue' => '<svg width="18" height="18">...</svg>',
+           'fieldValue2' => '<svg width="18" height="18">...</svg>',
        ]), // Optional
 ```
 
@@ -49,7 +49,7 @@ use Elbytes\NovaTooltipField\Tooltip;
 ....
 
 Tooltip::make('Type', 'type')
-    ->setDefaultIcon('<svg>...</svg>')
+    ->setDefaultIcon('<svg width="18" height="18">...</svg>')
 ```
 
 ### Value-dependent icons
@@ -63,8 +63,8 @@ use Elbytes\NovaTooltipField\Tooltip;
 
 Tooltip::make('Type', 'type')
        ->setDependIcons([
-           'fieldValue' => '<svg>...</svg>',
-           'fieldValue2' => '<svg>...</svg>',
+           'fieldValue' => '<svg width="18" height="18">...</svg>',
+           'fieldValue2' => '<svg width="18" height="18">...</svg>',
        ]),
 ```
 
