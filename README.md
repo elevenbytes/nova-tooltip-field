@@ -27,7 +27,45 @@ use Elbytes\NovaTooltipField\Tooltip;
 
 ....
 
-Tooltip::make('Field')
+Tooltip::make('Type', 'type'), 
+
+// OR
+
+Tooltip::make('Type', 'type')
+       ->setDefaultIcon('<svg>...</svg>') // Optional
+       ->setDependIcons([
+           'fieldValue' => '<svg>...</svg>',
+           'fieldValue2' => '<svg>...</svg>',
+       ]), // Optional
+```
+
+### Using with your own icon
+
+To change the default icon, you need to use the setDefaultIcon method.
+
+```php
+use Elbytes\NovaTooltipField\Tooltip;
+
+....
+
+Tooltip::make('Type', 'type')
+    ->setDefaultIcon('<svg>...</svg>')
+```
+
+### Value-dependent icons
+
+Sometimes the icon has to change depending on the value of the field, you can use the setDependIcons method for this.
+
+```php
+use Elbytes\NovaTooltipField\Tooltip;
+
+....
+
+Tooltip::make('Type', 'type')
+       ->setDependIcons([
+           'fieldValue' => '<svg>...</svg>',
+           'fieldValue2' => '<svg>...</svg>',
+       ]),
 ```
 
 ## Contribution
